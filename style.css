@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --secondary-bg-color: hsl(0, 0%, 12%);
+    --primary-bg-color: hsl(0, 0%, 8%);
+    --grey: hsl(0, 0%, 20%);
+    --White: hsl(0, 0%, 100%);
+    --Green: hsl(75, 94%, 57%);
+
+    --primary-font: "Inter", sans-serif;
+
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    border: 2px solid black;
+    background-color: var(--primary-bg-color);
+    /* background-color: var(--grey); */
+    font-family: var(--primary-font);
+}
+
+.mg-2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2{
+    color: var(--White);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h3{
+    color: var(--Green);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+p{
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 300;
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.container{
+    width: 375px;
+    /* height: 600px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--secondary-bg-color);
+    border-radius: 16px;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.container img{
+    width: 105px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.loaction{
+    margin-top: 0.5rem;
+}
+
+.container ul{
+}
+
+.container ul a{
+    display: inline-block;
+    margin-bottom: 1rem;
+    background-color: var(--grey);
+    color: var(--White);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 80%;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    border-radius: 0.5rem;
+}
+
+.container ul a:hover{
+    background-color: var(--Green);
+    color: var(--grey);
+    font-weight: 600;
+}
+
+@media screen and (max-width:576px) {
+    .container{
+        width: 90%;
+    }   
+
+    .container img{
+        width: 90px;
+        border-radius: 50%;
+        margin-top: 1.75rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .container ul a{
+        font-size: 0.9rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        border-radius: 0.5rem;
+    }
+
+}
+
+
+
+
+
+
+
+
